@@ -1,8 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router';
 import user from "../assets/user.png"
- 
-
 const Navbar = () => {
     return (
         <div className='flex justify-center '>
@@ -19,5 +17,4 @@ const Navbar = () => {
         </div>
     );
 };
-
 export default Navbar;
