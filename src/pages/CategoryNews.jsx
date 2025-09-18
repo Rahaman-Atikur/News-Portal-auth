@@ -1,9 +1,34 @@
-import React from 'react';
+import filter from 'daisyui/components/filter';
+import React, { useEffect } from 'react';
+import { useState } from 'react';
+import { useLoaderData, useParams } from 'react-router';
 
 const CategoryNews = () => {
+    const { id } = useParams();
+    const data = useLoaderData();
+
+    const [categoryNews, setCategoryNews] = useState([]);
+
+    console.log(id, data);
+    useEffect(() => {
+        if (id == "0") {
+            setCategoryNews(data);
+            return;
+        }
+        else if (id == "1") {
+            const filteredNews = data.filter(news => news.others.is_today_pick == true);
+            setCategoryNews(filteredNews);
+        }
+        else {
+            const filteredNews = data.filter((news) => news.category_id == id);
+            console.log(filteredNews);
+            setCategoryNews(filteredNews);
+        }
+    }, [data, id])
     return (
         <div>
-            <h2>This is Category News</h2>
+            <h2>CategoryNews-{id}</h2>
+            <h2>Total-{categoryNews.length} Found </h2>
         </div>
     );
 };

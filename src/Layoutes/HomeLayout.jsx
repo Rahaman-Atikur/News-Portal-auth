@@ -5,6 +5,7 @@ import LatestNews from '../components/LatestNews';
 import Navbar from '../components/Navbar';
 import LeftAside from '../components/HomeLayout/LeftAside';
 import RightAside from '../components/HomeLayout/RightAside';
+import SocialLogin from '../components/HomeLayout/SocialLogin';
 const HomeLayout = () => {
     return (
         <div>
@@ -17,19 +18,23 @@ const HomeLayout = () => {
                     <Navbar></Navbar>
                 </nav>
             </header>
-            <main className='w-11/12 mx-auto my-3 '>
-                <aside className=' col-span-1'>
+
+            <main className='w-11/12 mx-auto my-3 grid grid-cols-12 '>
+                <aside className=' col-span-3'>
                     <LeftAside></LeftAside>
                 </aside>
+
                 <section className="main col-span-6">
                     <Outlet></Outlet>
                 </section>
-                <aside>
-                    <RightAside>
 
+                <aside className='col-span-3'>
+                    <RightAside>
+                        
                     </RightAside>
                 </aside>
             </main>
+
 
 
         </div>
