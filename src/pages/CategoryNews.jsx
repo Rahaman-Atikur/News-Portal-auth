@@ -2,6 +2,7 @@ import filter from 'daisyui/components/filter';
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
+import NewsCard from '../components/HomeLayout/NewsCard';
 
 const CategoryNews = () => {
     const { id } = useParams();
@@ -29,6 +30,13 @@ const CategoryNews = () => {
         <div>
             <h2>CategoryNews-{id}</h2>
             <h2>Total-{categoryNews.length} Found </h2>
+
+            <div className='grid grid-cols-1 gap-5'>
+                {
+                    categoryNews.map((news) => <NewsCard key={news.id} news={news}
+                    ></NewsCard>)
+                }
+            </div>
         </div>
     );
 };
