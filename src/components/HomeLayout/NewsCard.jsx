@@ -1,6 +1,5 @@
 import React from "react";
 import { FaEye, FaShareAlt, FaBookmark } from "react-icons/fa";
-
 const NewsCard = ({ news }) => {
   return (
     <div className="card bg-base-100 shadow-xl  rounded-lg p-4">
