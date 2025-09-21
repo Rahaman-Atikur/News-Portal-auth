@@ -14,7 +14,7 @@ const router = createBrowserRouter(
             children: [
                 {
                     path: "",
-                    element: <Home></Home>
+                    element: <Home></Home>,
                 },
                 {
                     path: "/category/:id",
@@ -29,14 +29,14 @@ const router = createBrowserRouter(
             element: <AuthenticationLayout></AuthenticationLayout>,
             children: [
                 {
-                    path: "auth/login",
+                    path: "login",
                     element: <Login></Login>
                 },
                 {
-                    path: "auth/register",
+                    path: "register",
                     element: <Register></Register>
-                }
-            ]
+                },
+            ],
         },
         {
             path: "/news",
