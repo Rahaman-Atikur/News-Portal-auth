@@ -1,9 +1,10 @@
 import React from 'react';
 
-const NewsDetailsCard = () => {
+const NewsDetailsCard = ({news}) => {
+    console.log(news);
     return (
         <div>
-            NewsDetails card components
+            {news.title}
         </div>
     );
 };
