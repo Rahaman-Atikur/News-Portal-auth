@@ -7,14 +7,15 @@ import { useEffect } from 'react';
 
 const NewsDetails = () => {
     const data = useLoaderData();
+    console.log(data);
     const { id } = useParams();
-    const [news,setNews] = useState({});
-    console.log(data, id,news);
+    const [news, setNews] = useState({});
+    // console.log(data, id,news);
 
-    useEffect(()=>{
-        const newsDetails = data.find((singleNews)=>singleNews.id==id);
+    useEffect(() => {
+        const newsDetails = data.find((singleNews) => singleNews.id == id);
         setNews(newsDetails);
-    },[data,id])
+    }, [data, id])
     return (
         <div>
             <header className='py-3'>
@@ -23,7 +24,7 @@ const NewsDetails = () => {
             <main className='w-11/12 mx-auto grid grid-cols-3'>
                 <section className='col-span-9'>
                     <h2 className='font-bold mb-5'>News Details</h2>
-                    <NewsDetailsCard></NewsDetailsCard>
+                    <NewsDetailsCard news={news}></NewsDetailsCard>
                 </section>
                 <aside className='col-span-3'>
                     <RightAside></RightAside>
