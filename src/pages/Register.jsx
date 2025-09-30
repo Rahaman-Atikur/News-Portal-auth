@@ -1,9 +1,11 @@
 import React, { use, useState } from "react";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
 const Register = () => {
   const { createUser, setUser } = use(AuthContext);
   const [nameError, setNameError] = useState();
+
+  const navigator = useNavigate();
   // const [user,setUser] = useState(null);
 
   const handleRegister = (e) => {
@@ -24,6 +26,7 @@ const Register = () => {
         const user = result.user;
         updateUser({ displayName: name, photoUrl: photo }).then(() => {
           setUser({ ...user, displayName: name, photoUrl: photo });
+          
         }).catch((error) => {
           console.log(error);
           setUser(user);
