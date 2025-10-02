@@ -9,6 +9,7 @@ import Register from "../pages/Register";
 import NewsDetails from "../pages/NewsDetails";
 import PrivateRouter from "../Provider/PrivateRouter";
 import NewsDetailsCard from "../components/NewsDetailsCard";
+import Loading from "../pages/Loading"
 const router = createBrowserRouter(
     [
         {
@@ -47,6 +48,7 @@ const router = createBrowserRouter(
                 <NewsDetailsCard></NewsDetailsCard>
             </PrivateRouter>,
             loader: () => fetch("/news.json"),
+            hydrateFallbackElement: <Loading></Loading>
         },
         {
             path: "/*",
