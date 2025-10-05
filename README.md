@@ -4,6 +4,18 @@ Screen Shots:
 1.
 <img width="1862" height="863" alt="image" src="https://github.com/user-attachments/assets/b8c43f50-fc43-43ae-9c92-2a0b367f344c" />
 
+2.
+
+<img width="480" height="609" alt="image" src="https://github.com/user-attachments/assets/00658cae-9985-4d03-85f8-54bafeafd64c" />
+
+3.
+<img width="1280" height="654" alt="image" src="https://github.com/user-attachments/assets/8a98174c-7f8c-45b1-8c3e-cf5da048c197" />
+4.
+
+<img width="454" height="774" alt="image" src="https://github.com/user-attachments/assets/62cd2de4-2b65-41c2-8592-2cb86e1a9804" />
+
+
+
 
 
 # 📰 NewsSphere — Modern News Portal
