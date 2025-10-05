@@ -1,3 +1,11 @@
+Live Site :  https://news-portal-auth-f5cdd.web.app/category/1
+Screen Shots:
+
+1.
+<img width="1862" height="863" alt="image" src="https://github.com/user-attachments/assets/b8c43f50-fc43-43ae-9c92-2a0b367f344c" />
+
+
+
 # 📰 NewsSphere — Modern News Portal
 
 ![Vite]https://vite.dev/guide/
