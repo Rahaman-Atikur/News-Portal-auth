@@ -5,10 +5,10 @@ import { Navigate, useLocation } from 'react-router';
 const PrivateRouter = ({ children }) => {
     //  if user is available then navigate to login
     const { user, loading } = use(AuthContext);
-    console.log(user);
+    // console.log(user);
 
     const location = useLocation();
-    console.log(location);
+    // console.log(location);
 
     if(loading){
         return <span className="loading loading-spinner loading-xl"></span>

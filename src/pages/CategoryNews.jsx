@@ -10,7 +10,7 @@ const CategoryNews = () => {
 
     const [categoryNews, setCategoryNews] = useState([]);
 
-    console.log(id, data);
+    // console.log(id, data);
     useEffect(() => {
         if (id == "0") {
             setCategoryNews(data);
@@ -22,7 +22,7 @@ const CategoryNews = () => {
         }
         else {
             const filteredNews = data.filter((news) => news.category_id == id);
-            console.log(filteredNews);
+            // console.log(filteredNews);
             setCategoryNews(filteredNews);
         }
     }, [data, id])

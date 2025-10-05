@@ -5,9 +5,9 @@ import { AuthContext } from "../Provider/AuthProvider";
 const Navbar = () => {
     const { user, logOut } = use(AuthContext);
     const handleLogout = () => {
-        console.log("User Trying to Logout");
+        // console.log("User Trying to Logout");
         logOut().then(() => {
-            alert("You Logged Out confirmed");
+            // alert("You Logged Out confirmed");
         })
             .catch((error) => {
                 console.log(error);

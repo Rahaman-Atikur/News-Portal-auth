@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 
 const NewsDetails = () => {
     const data = useLoaderData();
-    console.log(data);
+    // console.log(data);
     const { id } = useParams();
     const [news, setNews] = useState({});
     // console.log(data, id,news);

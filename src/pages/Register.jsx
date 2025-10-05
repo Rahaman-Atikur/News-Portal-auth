@@ -20,7 +20,7 @@ const Register = () => {
     const photoUrl = form.photoUrl.value;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(name, photoUrl, email, password);
+    // console.log(name, photoUrl, email, password);
     createUser(email, password)
       .then((result) => {
         const user = result.user;
@@ -28,10 +28,10 @@ const Register = () => {
           setUser({ ...user, displayName: name, photoUrl: photo });
           
         }).catch((error) => {
-          console.log(error);
+          // console.log(error);
           setUser(user);
         });
-        console.log(user);
+        // console.log(user);
         setUser(user);
       })
       .catch((error) => {
